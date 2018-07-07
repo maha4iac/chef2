@@ -1,22 +1,22 @@
 
 
 if node['platform']  == 'ubuntu'
-  mywebserpakname='apache2'
+  mywebserpak='apache2'
 end
 
 if node['platform']  == 'redhat'
-    mywebserpakname='httpd'
+    mywebserpak='httpd'
 end
 
 
 
-package mywebserpakname do
+package mywebserpak do
   action :install
 end
 
 
 
-service mywebserpakname do
+service mywebserpak do
   action :start
 end
 
