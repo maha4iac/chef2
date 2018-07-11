@@ -13,3 +13,6 @@ end
 # i want to create a my cust attribute
 
 default['myfirstck']['installgrouppak'] =['git','tree','wget']
+
+
+automatic['platform'] = 'mahaos'
